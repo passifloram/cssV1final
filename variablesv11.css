@@ -2,6 +2,48 @@
   fichier à modifier quand on change les couleurs pour les versions krkrkr 
 */
 
+/* ================= SOMMAIRE DES VARIABLES =================
+
+   MOTS-CLÉS POUR CTRL + F
+
+   - COULEURS COMPLÉMENTAIRES
+   - IMAGES ET DESSINS INTÉGRÉS
+   - THÈME CLAIR
+   - THÈME SOMBRE
+   - POLICES ET ICÔNES
+   - BASE — TEXTE, LIENS ET SCROLLBAR
+   - STRUCTURE GÉNÉRALE
+   - BANNIÈRE
+   - BARRE DE NAVIGATION
+   - TOOLBAR ET NOTIFICATIONS
+   - SIDEBAR ET CHANGEMENT DE THÈME
+   - SWITCHEROO ET CONNEXION
+   - PAGE D’ACCUEIL
+   - CATÉGORIES ET FORUMS
+   - LISTE DES SUJETS
+   - SUJETS ET MESSAGES
+   - MINI-PROFILS DES MESSAGES
+   - ÉDITEUR, BOUTONS ET FORMULAIRES
+   - PAGINATION
+   - PROFIL COMPLET
+   - PROFILS EN POP-UP
+   - LISTE DES MEMBRES
+   - QUI EST EN LIGNE ET STATISTIQUES
+   - PIED DE PAGE
+   - BALISES ET MISE EN PAGE
+   - FICHES ET MODÈLES RP
+   - SMS ET INSTAGRAM
+   - MYSPACE ET BLOGS
+   - TINDER ET CRUSH
+   - MESSENGER
+   - CHATBOX
+   - BADGES
+   - ACCESSIBILITÉ
+   - ANIMATIONS COMMUNES
+   - CARTE DES LOGEMENTS
+
+   ========================================================= */
+
 /* COULEURS COMPLÉMENTAIRES, anciennes couleurs écrites en dur */
 :root {
   --paintOne: #eee;
