@@ -31761,3 +31761,156 @@ html body a#header {
 }
 
 
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Work+Sans:wght@400;
+
+
+.post_row .cj-post-tabs__tab.selected > i,
+.post_row .cj-post-tabs__tab[aria-selected="true"] > i,
+.post_row .cj-post-tabs__tab.selected > i::before,
+.post_row .cj-post-tabs__tab[aria-selected="true"] > i::before {
+    display: inline-block !important;
+    color: #18121d !important;
+    font-family: "Font Awesome 6 Free" !important;
+    font-size: 16px !important;
+    font-style: normal !important;
+    font-weight: 900 !important;
+    line-height: 1 !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+500;600;700&display=swap');
+/* Concrete Jungle : structure des sujets. 
+   Le profil postal conserve son propre fichier PROFIL_AUTONOME.css. */
+.cj-topic {
+  --cjt-paper: var(--neutral, #f8f6f2);
+  --cjt-surface: var(--neutralTwo, #eae7e2);
+  --cjt-ink: var(--textColor, #29282c);
+  --cjt-accent: #a34476;
+  --cjt-line: var(--neutralDarker, #c9c5c0);
+  display: block; box-sizing: border-box; width: 100%; min-width: 0;
+  margin: 12px 0; padding: clamp(10px, 1.6vw, 18px);
+  background: var(--cjt-surface); color: var(--cjt-ink);
+  border: 0; border-radius: 10px; font: 400 14px/1.6 "Work Sans", sans-serif;
+}
+.cj-topic .cj-topic__breadcrumb { display: block; margin: 0 0 10px; padding: 0; font: 600 14px/1.6 "Work Sans", sans-serif; overflow-wrap: anywhere; }
+.cj-topic .cj-topic__breadcrumb a { color: var(--cjt-accent); text-decoration: none; }
+.cj-topic .cj-topic__intro { display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: center; column-gap: 18px; row-gap: 6px; padding: 3px 0; margin: 0; border: 0; border-radius: 0; background: transparent; text-align: left; }
+.cj-topic .cj-topic__title { display: block; float: none; width: auto; padding: 0; margin: 0; border: 0; background: none; color: var(--cjt-ink); font: 400 clamp(20px, 2.4vw, 24px)/1.3 "Abril Fatface", serif; text-transform: none; text-align: left; white-space: normal; word-break: normal; overflow-wrap: normal; hyphens: none; height: auto; max-height: none; overflow: visible; }
+.cj-topic .cj-topic__participants { display: flex; flex-wrap: wrap; justify-content: flex-end; justify-self: end; align-items: center; gap: 7px; margin: 0; text-align: right; font: 400 13px/1.5 "Work Sans", sans-serif; }
+.cj-topic .cj-topic__participants:empty { display: none; }
+.cj-topic .cj-topic__participants img { width: 24px; height: 24px; object-fit: cover; border: 2px solid var(--cjt-paper); border-radius: 50%; vertical-align: middle; }
+.cj-topic .cj-topic__participants a { color: var(--cjt-ink); text-decoration: none; }
+.cj-topic .cj-topic__toolbar { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px; margin: 0; padding: 10px 0 14px; }
+.cj-topic .cj-topic__toolbar--bottom { padding: 12px 0 8px; }
+.cj-topic .cj-topic__actions { display: flex; flex-wrap: wrap; gap: 18px; margin: 0; order: -1; }
+.cj-topic .cj-topic__button { display: inline-flex; align-items: center; justify-content: center; box-sizing: border-box; position: relative; min-height: 0; padding: 3px 0; margin: 0; border: 0; border-radius: 0; background: transparent; box-shadow: none; color: var(--cjt-ink); font: 600 13px/1.4 "Work Sans", sans-serif; text-decoration: none; text-transform: none; }
+.cj-topic .cj-topic__button--primary { background: transparent; color: var(--cjt-ink); font-weight: 700; }
+.cj-topic .cj-topic__button::after { content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 1px; background: currentColor; transform: scaleX(0); transform-origin: center; transition: transform .2s ease; }
+.cj-topic .cj-topic__button:hover, .cj-topic .cj-topic__button:focus-visible { text-decoration: none; }
+.cj-topic .cj-topic__button:hover::after, .cj-topic .cj-topic__button:focus-visible::after { transform: scaleX(1); }
+@media (prefers-reduced-motion: reduce) { .cj-topic .cj-topic__button::after { transition: none; } }
+.cj-topic .cj-topic__pagination { display: flex; flex-wrap: wrap; align-items: center; gap: 5px; float: none; padding: 0; margin: 0; font: 400 13px/1.8 "Work Sans", sans-serif; }
+.cj-topic .cj-topic__pagination a, .cj-topic .cj-topic__pagination strong { display: inline-block; min-width: 0; box-sizing: border-box; padding: 0 2px; border: 0; border-radius: 0; background: transparent; box-shadow: none; color: var(--cjt-ink); text-align: center; text-decoration: none; }
+.cj-topic .cj-topic__pagination strong { background: transparent; color: var(--cjt-accent); font-weight: 700; }
+.cj-topic .cj-topic__messages { display: block; margin: 0; padding: 0; min-width: 0; }
+/* Grille uniquement : aucun changement dans l'en-tête ou les onglets du profil. */
+body:not(.tinder-auto-topic):not([data-tinder-mode="active"]):not(:has(.tinder-app, .sms-first, .wrapped-sms, .sms-fond)) .cj-topic .cj-topic__messages > .post_row {
+  display: grid; grid-template-columns: 240px minmax(0, 1fr); gap: 12px;
+  box-sizing: border-box; width: 100%; min-width: 0; margin: 0 0 16px; padding: 0;
+  border: 0; border-radius: 0; background: transparent; box-shadow: none;
+}
+body:not(.tinder-auto-topic):not([data-tinder-mode="active"]):not(:has(.tinder-app, .sms-first, .wrapped-sms, .sms-fond)) .cj-topic .post_row > .post_message { display: block; min-width: 0; box-sizing: border-box; margin: 0; padding: clamp(12px, 1.5vw, 18px); background: var(--cjt-paper); color: var(--cjt-ink); border: 0; border-radius: 8px; }
+body:not(.tinder-auto-topic):not([data-tinder-mode="active"]):not(:has(.tinder-app, .sms-first, .wrapped-sms, .sms-fond)) .cj-topic .post_message > .post_details { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 10px; margin: 0 0 14px; padding: 0 0 8px; border-bottom: 1px solid var(--cjt-line); font: 400 12px/1.5 "Work Sans", sans-serif; }
+body:not(.tinder-auto-topic):not([data-tinder-mode="active"]):not(:has(.tinder-app, .sms-first, .wrapped-sms, .sms-fond)) .cj-topic .post_details .post_date { color: var(--cjt-ink); text-decoration: none; }
+body:not(.tinder-auto-topic):not([data-tinder-mode="active"]):not(:has(.tinder-app, .sms-first, .wrapped-sms, .sms-fond)) .cj-topic .post_details .post_manage { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; }
+body:not(.tinder-auto-topic):not([data-tinder-mode="active"]):not(:has(.tinder-app, .sms-first, .wrapped-sms, .sms-fond)) .cj-topic .post_details .profile-icons { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; list-style: none; margin: 0; padding: 0; }
+body:not(.tinder-auto-topic):not([data-tinder-mode="active"]):not(:has(.tinder-app, .sms-first, .wrapped-sms, .sms-fond)) .cj-topic .post_details .profile-icons li { display: inline-flex; margin: 0; padding: 0; }
+body:not(.tinder-auto-topic):not([data-tinder-mode="active"]):not(:has(.tinder-app, .sms-first, .wrapped-sms, .sms-fond)) .cj-topic .post_details .rep-button { padding: 5px 9px; border: 1px solid var(--cjt-line); border-radius: 4px; background: var(--cjt-surface); color: var(--cjt-ink); font: inherit; cursor: pointer; }
+body:not(.tinder-auto-topic):not([data-tinder-mode="active"]):not(:has(.tinder-app, .sms-first, .wrapped-sms, .sms-fond)) .cj-topic .post_message > .postbody { display: block; margin: 0; padding: 0; min-width: 0; font: 400 15px/1.75 "Work Sans", sans-serif; overflow-wrap: anywhere; }
+body:not(.tinder-auto-topic):not([data-tinder-mode="active"]):not(:has(.tinder-app, .sms-first, .wrapped-sms, .sms-fond)) .cj-topic .post_message > .signature_div { margin: 18px 0 0; padding: 12px 0 0; border-top: 1px solid var(--cjt-line); }
+.cj-topic .cj-topic__utilities { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 10px; padding: 8px 0; margin: 0; font: 400 13px/1.5 "Work Sans", sans-serif; }
+.cj-topic .cj-topic__utilities a { color: var(--cjt-accent); }
+.cj-topic .cj-topic__quickreply, .cj-topic #forum_rules { display: block; width: auto; margin: 12px 0; padding: 14px; background: var(--cjt-paper); color: var(--cjt-ink); border: 0; border-radius: 8px; }
+.cj-topic .cj-topic__quickreply:empty { display: none; }
+.cj-topic .cj-topic__footer { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 12px; margin: 12px 0 0; }
+.cj-topic .cj-topic__footer form { float: none; max-width: 100%; margin: 0; }
+.cj-topic .cj-topic__footer fieldset { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; min-width: 0; margin: 0; padding: 0; border: 0; }
+.cj-topic .cj-topic__footer select { max-width: 100%; min-width: 0; }
+.cj-topic .cj-topic__footer select, .cj-topic .cj-topic__footer input[type="submit"], .cj-topic .cj-topic__quickreply input[type="submit"], .cj-topic .cj-topic__quickreply .button2 { padding: 7px 10px; border: 1px solid var(--cjt-line); border-radius: 4px; background: var(--cjt-paper); color: var(--cjt-ink); font: 400 13px/1.5 "Work Sans", sans-serif; }
+.cj-topic .cj-topic__button:focus-visible, .cj-topic .cj-topic__pagination a:focus-visible { outline: 2px solid var(--cjt-accent); outline-offset: 3px; }
+@media (max-width: 700px) {
+  body:not(.tinder-auto-topic):not([data-tinder-mode="active"]):not(:has(.tinder-app, .sms-first, .wrapped-sms, .sms-fond)) .cj-topic .cj-topic__messages > .post_row { grid-template-columns: minmax(0, 1fr); }
+  .cj-topic .cj-topic__intro { padding: 3px 0; }
+  .cj-topic .cj-topic__toolbar { align-items: flex-start; }
+}
+
+/* Neutralise le centrage du conteneur généré par la liste Forumactif. */
+.cj-topic .cj-topic__participants > * { margin-left: 0; margin-right: 0; text-align: right; }
+
+@media (max-width: 480px) {
+  .cj-topic .cj-topic__intro { grid-template-columns: minmax(0, 1fr); }
+  .cj-topic .cj-topic__participants { justify-self: end; }
+}
+
+/* Liste Forumactif : supprimer les marges héritées qui décalent le centrage. */
+.cj-topic .cj-topic__participants { align-self: center; padding: 0; min-height: 0; line-height: 1.4; }
+.cj-topic .cj-topic__participants .poster-list {
+  display: flex; flex-wrap: wrap; align-items: center; justify-content: flex-end;
+  position: static; float: none; width: auto; height: auto; min-height: 0;
+  margin: 0 !important; padding: 0 !important; gap: 0; transform: none;
+}
+.cj-topic .cj-topic__participants .poster {
+  display: block; position: relative; flex: 0 0 28px; width: 28px; height: 28px;
+  box-sizing: border-box; margin: 0; padding: 0; top: auto; bottom: auto; transform: none;
+  border: 2px solid var(--cjt-paper); border-radius: 50%;
+  background-image: var(--poster-avatar); background-size: cover; background-position: center;
+}
+.cj-topic .cj-topic__participants .poster + .poster { margin-left: -7px; }
+.cj-topic .cj-topic__participants .poster-count {
+  display: block; align-self: center; position: static; float: none;
+  margin: 0 0 0 8px; padding: 0; line-height: 1.4; transform: none;
+}
+
+[data-color-scheme="dark"] .cj-topic { --cjt-accent: #aebaff; }
+.cj-topic .cj-topic__breadcrumb, .cj-topic .cj-topic__breadcrumb a, .cj-topic .cj-topic__breadcrumb a span { color: var(--cjt-accent); }
+.cj-topic .cj-topic__title > .fa-solid { font-size: .58em; vertical-align: .14em; color: var(--cjt-accent); }
+.cj-topic .cj-topic__title > .fa-quote-left { margin-right: .5em; }
+.cj-topic .cj-topic__title > .fa-quote-right { margin-left: .5em; }
+.cj-topic .cj-topic__pagination a:hover { text-decoration: underline; }
+
+/* Les conversations conservent aussi leur typographie héritée. */
+body:is(.tinder-auto-topic, [data-tinder-mode="active"]) .cj-topic, body:has(.tinder-app, .sms-first, .wrapped-sms, .sms-fond) .cj-topic { font: inherit; }
+
+/* Avatar en haut à gauche ; en-tête et message à droite. */
+@media (min-width: 701px) {
+  body:not(.tinder-auto-topic):not([data-tinder-mode="active"]):not(:has(.tinder-app, .sms-first, .wrapped-sms, .sms-fond)) .cj-topic .cj-topic__messages > .post_row {
+    grid-template-columns: 240px minmax(0, 1fr);
+    grid-template-rows: auto 1fr;
+    grid-template-areas: "profil entete" "profil message";
+    align-items: start;
+  }
+  body:not(.tinder-auto-topic):not([data-tinder-mode="active"]):not(:has(.tinder-app, .sms-first, .wrapped-sms, .sms-fond)) .cj-topic .cj-topic__messages > .post_row > .post_head {
+    grid-area: entete;
+    min-width: 0;
+    width: auto;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  body:not(.tinder-auto-topic):not([data-tinder-mode="active"]):not(:has(.tinder-app, .sms-first, .wrapped-sms, .sms-fond)) .cj-topic .cj-topic__messages > .post_row > .post_profile {
+    grid-area: profil;
+    align-self: start;
+    margin-top: 0;
+    padding-top: 0;
+    min-width: 0;
+  }
+  body:not(.tinder-auto-topic):not([data-tinder-mode="active"]):not(:has(.tinder-app, .sms-first, .wrapped-sms, .sms-fond)) .cj-topic .cj-topic__messages > .post_row > .post_profile > .post_avatar {
+    margin-top: 0;
+  }
+  body:not(.tinder-auto-topic):not([data-tinder-mode="active"]):not(:has(.tinder-app, .sms-first, .wrapped-sms, .sms-fond)) .cj-topic .cj-topic__messages > .post_row > .post_message {
+    grid-area: message;
+    min-width: 0;
+  }
+}
+
+
