@@ -32283,3 +32283,8 @@ html body .fiche-presentation.cj-prelien {
   margin: 0 auto;
   padding: 0;
 }
+
+
+html body .fiche-presentation.cj-prelien .cjpl-meta {
+  font-size: 14px;
+}
