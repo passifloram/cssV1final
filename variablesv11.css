@@ -31892,3 +31892,13 @@ body:not(.tinder-auto-topic):not([data-tinder-mode="active"]):not(:has(.tinder-a
 body:not(.tinder-auto-topic):not([data-tinder-mode="active"]):not(:has(.tinder-app, .sms-first, .wrapped-sms, .sms-fond)) .cj-topic .cj-topic__messages > .post_row:not(.cj-post-no-profile) { grid-template-columns:minmax(0,1fr)!important; grid-template-rows:none!important; grid-template-areas:none!important; }
 body:not(.tinder-auto-topic):not([data-tinder-mode="active"]):not(:has(.tinder-app, .sms-first, .wrapped-sms, .sms-fond)) .cj-topic .cj-topic__messages > .post_row:not(.cj-post-no-profile) > .post_head, body:not(.tinder-auto-topic):not([data-tinder-mode="active"]):not(:has(.tinder-app, .sms-first, .wrapped-sms, .sms-fond)) .cj-topic .cj-topic__messages > .post_row:not(.cj-post-no-profile) > .post_profile, body:not(.tinder-auto-topic):not([data-tinder-mode="active"]):not(:has(.tinder-app, .sms-first, .wrapped-sms, .sms-fond)) .cj-topic .cj-topic__messages > .post_row:not(.cj-post-no-profile) > .post_message { grid-column:1/-1!important; grid-row:auto!important; }
 }
+
+
+/* Citation sous le pseudo */
+.cj-topic .post_head .post_quote,
+.cj-topic .post_head .post_quote .field_content {
+  font-size: 13px !important;
+  font-style: italic !important;
+  font-weight: 400 !important;
+  line-height: 1.5 !important;
+}
