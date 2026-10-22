@@ -32276,3 +32276,10 @@ html body .cj-prelien .cjpl-fact small {
 html body .cj-prelien .cjpl-cw r2 {
   font-size: 15px;
 }
+
+html body .fiche-presentation.cj-prelien {
+  width: 100%;
+  max-width: none;
+  margin: 0 auto;
+  padding: 0;
+}
