@@ -31894,9 +31894,9 @@ body:not(.tinder-auto-topic):not([data-tinder-mode="active"]):not(:has(.tinder-a
 }
 
 
-/* Citation sous le pseudo */
-.cj-topic .post_head .post_quote,
-.cj-topic .post_head .post_quote .field_content {
+/* Citation sous le pseudo : légèrement plus petite et italique */
+html body:not(.tinder-auto-topic):not([data-tinder-mode="active"]):not(:has(.sms-first, .wrapped-sms))
+.post_row.post:has(> .cj-post-profile) .post_head .post_quote {
   font-size: 13px !important;
   font-style: italic !important;
   font-weight: 400 !important;
