@@ -32578,11 +32578,9 @@ html body .fiche-presentation.cj-prelien .cjpl-meta {
 }
 
 
-/* Même police que les titres des sujets */
+/* Titres des pages forums, sous-forums et liste des membres */
 html body h1.page-title,
-html body h1.page-title a,
-html body .cjcat-title h2,
-html body .cjcat-name {
+html body h1.page-title a {
   font-family: "DM Serif Display", Georgia, serif !important;
   font-weight: 400 !important;
   font-style: normal !important;
