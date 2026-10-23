@@ -3956,6 +3956,294 @@ html[data-forum-layout="columns"][data-color-scheme="dark"] #f13 {
   --forum-filler-image: url("https://i.postimg.cc/JzPDTjsW/afreshstart.jpg");
 }
 
+
+
+
+/* IMAGES EN PLUS SUR LES SOUS FORUM HABITATION
+*/
+
+/* New Beginnings > The Wanted
+   Sous-forums : familiaux (#f74) ; amicaux (#f27) ; orgas illégales (#f81) ; pros (#f28) ; ambigus (#f80) ; autres (#f82) ; pris (#f31) ; en construction (#f83)
+   8 rubrique(s) : pas de case libre avec ce nombre pair.
+*/
+/* CLAIR — The Wanted */
+html[data-forum-layout="columns"] #f10 {
+  --forum-filler-image: url("https://i.postimg.cc/7Ld2LQkh/LONDON21.png");
+}
+
+/* SOMBRE — The Wanted */
+html[data-forum-layout="columns"][data-color-scheme="dark"] #f10 {
+  --forum-filler-image: url("https://i.postimg.cc/g2vSD6Yz/LONDON28.png");
+}
+
+/* New Beginnings > Roll Call
+   Sous-forums : Roaming Free (#f32) ; Brexit Lines (#f33)
+   2 rubrique(s) : pas de case libre avec ce nombre pair.
+*/
+/* CLAIR — Roll Call */
+html[data-forum-layout="columns"] #f11 {
+  --forum-filler-image: url("https://i.postimg.cc/3xFMwq0F/LONDON37.png");
+}
+
+/* SOMBRE — Roll Call */
+html[data-forum-layout="columns"][data-color-scheme="dark"] #f11 {
+  --forum-filler-image: url("https://i.postimg.cc/ZYGXxmrg/LONDON42.png");
+}
+
+/* New Beginnings > Roll Call > Roaming Free
+   Sous-forum : Fiches en refonte (#f91)
+   1 rubrique(s) : case libre actuellement prévue.
+*/
+/* CLAIR — Roaming Free */
+html[data-forum-layout="columns"] #f32 {
+  --forum-filler-image: url("https://i.postimg.cc/mrHrmLvT/LONDON27.png");
+}
+
+/* SOMBRE — Roaming Free */
+html[data-forum-layout="columns"][data-color-scheme="dark"] #f32 {
+  --forum-filler-image: url("https://i.postimg.cc/wMmZY4dD/LONDON40.png");
+}
+
+/* Game On > North London
+   Sous-forums : Camden (#f34) ; Hackney (#f40) ; Islington (#f39) ; Tower Hamlets (#f41)
+   4 rubrique(s) : pas de case libre avec ce nombre pair.
+*/
+/* CLAIR — North London */
+html[data-forum-layout="columns"] #f16 {
+  --forum-filler-image: url("https://i.postimg.cc/mZXDr4DG/LONDON11.png");
+}
+
+/* SOMBRE — North London */
+html[data-forum-layout="columns"][data-color-scheme="dark"] #f16 {
+  --forum-filler-image: url("https://i.postimg.cc/g2vSD6Yz/LONDON28.png");
+}
+
+/* Game On > North London > Camden
+   Sous-forum : Habitations (#f49)
+   1 rubrique(s) : case libre actuellement prévue.
+*/
+/* CLAIR — Camden */
+html[data-forum-layout="columns"] #f34 {
+  --forum-filler-image: url("https://i.postimg.cc/wTJ8CMqM/LONDON36.png");
+}
+
+/* SOMBRE — Camden */
+html[data-forum-layout="columns"][data-color-scheme="dark"] #f34 {
+  --forum-filler-image: url("https://i.postimg.cc/WpFQZzJM/LONDON41.png");
+}
+
+/* Game On > North London > Hackney
+   Sous-forum : Habitations (#f50)
+   1 rubrique(s) : case libre actuellement prévue.
+*/
+/* CLAIR — Hackney */
+html[data-forum-layout="columns"] #f40 {
+  --forum-filler-image: url("https://i.postimg.cc/wMmZY4dD/LONDON40.png");
+}
+
+/* SOMBRE — Hackney */
+html[data-forum-layout="columns"][data-color-scheme="dark"] #f40 {
+  --forum-filler-image: url("https://i.postimg.cc/rpwHwwkw/LONDON44.png");
+}
+
+/* Game On > North London > Islington
+   Sous-forum : Habitations (#f51)
+   1 rubrique(s) : case libre actuellement prévue.
+*/
+/* CLAIR — Islington */
+html[data-forum-layout="columns"] #f39 {
+  --forum-filler-image: url("https://i.postimg.cc/8zscrBwZ/LONDON24.png");
+}
+
+/* SOMBRE — Islington */
+html[data-forum-layout="columns"][data-color-scheme="dark"] #f39 {
+  --forum-filler-image: url("https://i.postimg.cc/66FxbnNk/LONDON35.png");
+}
+
+/* Game On > North London > Tower Hamlets
+   Sous-forum : Habitations (#f52)
+   1 rubrique(s) : case libre actuellement prévue.
+*/
+/* CLAIR — Tower Hamlets */
+html[data-forum-layout="columns"] #f41 {
+  --forum-filler-image: url("https://i.postimg.cc/bJGF1VrM/LONDON46.png");
+}
+
+/* SOMBRE — Tower Hamlets */
+html[data-forum-layout="columns"][data-color-scheme="dark"] #f41 {
+  --forum-filler-image: url("https://i.postimg.cc/nhk5xQNg/LONDON43.png");
+}
+
+/* Game On > East London > The City
+   Sous-forum : Habitations (#f56)
+   1 rubrique(s) : case libre actuellement prévue.
+*/
+/* CLAIR — The City */
+html[data-forum-layout="columns"] #f36 {
+  --forum-filler-image: url("https://i.postimg.cc/przG69DY/LONDON48.png");
+}
+
+/* SOMBRE — The City */
+html[data-forum-layout="columns"][data-color-scheme="dark"] #f36 {
+  --forum-filler-image: url("https://i.postimg.cc/NjrLVnQQ/LONDON9.png");
+}
+
+/* Game On > East London > Greenwich
+   Sous-forum : Habitations (#f57)
+   1 rubrique(s) : case libre actuellement prévue.
+*/
+/* CLAIR — Greenwich */
+html[data-forum-layout="columns"] #f44 {
+  --forum-filler-image: url("https://i.postimg.cc/jjMGHJXk/LONDON39.png");
+}
+
+/* SOMBRE — Greenwich */
+html[data-forum-layout="columns"][data-color-scheme="dark"] #f44 {
+  --forum-filler-image: url("https://i.postimg.cc/3RZk1DY9/LONDON3.png");
+}
+
+/* Game On > East London > Newham
+   Sous-forum : Habitations (#f58)
+   1 rubrique(s) : case libre actuellement prévue.
+*/
+/* CLAIR — Newham */
+html[data-forum-layout="columns"] #f45 {
+  --forum-filler-image: url("https://i.postimg.cc/mrHrmLvT/LONDON27.png");
+}
+
+/* SOMBRE — Newham */
+html[data-forum-layout="columns"][data-color-scheme="dark"] #f45 {
+  --forum-filler-image: url("https://i.postimg.cc/1XkB0y2B/LONDON33.png");
+}
+
+/* Game On > South London
+   Sous-forums : Lambeth (#f46) ; Southwark (#f37) ; Wandsworth (#f47) ; Lewisham (#f48)
+   4 rubrique(s) : pas de case libre avec ce nombre pair.
+*/
+/* CLAIR — South London */
+html[data-forum-layout="columns"] #f19 {
+  --forum-filler-image: url("https://i.postimg.cc/ZYGXxmrg/LONDON42.png");
+}
+
+/* SOMBRE — South London */
+html[data-forum-layout="columns"][data-color-scheme="dark"] #f19 {
+  --forum-filler-image: url("https://i.postimg.cc/1XkB0y2B/LONDON33.png");
+}
+
+/* Game On > South London > Lambeth
+   Sous-forum : Habitations (#f59)
+   1 rubrique(s) : case libre actuellement prévue.
+*/
+/* CLAIR — Lambeth */
+html[data-forum-layout="columns"] #f46 {
+  --forum-filler-image: url("https://i.postimg.cc/7Ld2LQkh/LONDON21.png");
+}
+
+/* SOMBRE — Lambeth */
+html[data-forum-layout="columns"][data-color-scheme="dark"] #f46 {
+  --forum-filler-image: url("https://i.postimg.cc/nVDPzW6P/LONDON49.pngg");
+}
+
+/* Game On > South London > Southwark
+   Sous-forum : Habitations (#f60)
+   1 rubrique(s) : case libre actuellement prévue.
+*/
+/* CLAIR — Southwark */
+html[data-forum-layout="columns"] #f37 {
+  --forum-filler-image: url("https://i.postimg.cc/nhk5xQNg/LONDON43.png");
+}
+
+/* SOMBRE — Southwark */
+html[data-forum-layout="columns"][data-color-scheme="dark"] #f37 {
+  --forum-filler-image: url("https://i.postimg.cc/66FxbnNk/LONDON35.png");
+}
+
+/* Game On > South London > Wandsworth
+   Sous-forum : Habitations (#f61)
+   1 rubrique(s) : case libre actuellement prévue.
+*/
+/* CLAIR — Wandsworth */
+html[data-forum-layout="columns"] #f47 {
+  --forum-filler-image: url("https://i.postimg.cc/wTJ8CMqM/LONDON36.png");
+}
+
+/* SOMBRE — Wandsworth */
+html[data-forum-layout="columns"][data-color-scheme="dark"] #f47 {
+  --forum-filler-image: url("https://i.postimg.cc/3xFMwq0F/LONDON37.png");
+}
+
+/* Game On > South London > Lewisham
+   Sous-forum : Habitations (#f62)
+   1 rubrique(s) : case libre actuellement prévue.
+*/
+/* CLAIR — Lewisham */
+html[data-forum-layout="columns"] #f48 {
+  --forum-filler-image: url("https://i.postimg.cc/hPvX8jw3/LONDON6.png");
+}
+
+/* SOMBRE — Lewisham */
+html[data-forum-layout="columns"][data-color-scheme="dark"] #f48 {
+  --forum-filler-image: url("https://i.postimg.cc/wvk12sgV/LONDON4.png");
+}
+
+/* Game On > West London > Westminster
+   Sous-forum : Habitations (#f53)
+   1 rubrique(s) : case libre actuellement prévue.
+*/
+/* CLAIR — Westminster */
+html[data-forum-layout="columns"] #f35 {
+  --forum-filler-image: url("https://i.postimg.cc/XJgrLy4w/LONDON2.png");
+}
+
+/* SOMBRE — Westminster */
+html[data-forum-layout="columns"][data-color-scheme="dark"] #f35 {
+  --forum-filler-image: url("https://i.postimg.cc/NjrLVnQQ/LONDON9.png");
+}
+
+/* Game On > West London > Kensington & Chelsea
+   Sous-forum : Habitations (#f54)
+   1 rubrique(s) : case libre actuellement prévue.
+*/
+/* CLAIR — Kensington & Chelsea */
+html[data-forum-layout="columns"] #f42 {
+  --forum-filler-image: url("https://i.postimg.cc/5Nr6sJdK/LONDON7.png");
+}
+
+/* SOMBRE — Kensington & Chelsea */
+html[data-forum-layout="columns"][data-color-scheme="dark"] #f42 {
+  --forum-filler-image: url("https://i.postimg.cc/nV38mK6C/LONDON15.png");
+}
+
+/* Game On > West London > Hammersmith & Fulham
+   Sous-forum : Habitations (#f55)
+   1 rubrique(s) : case libre actuellement prévue.
+*/
+/* CLAIR — Hammersmith & Fulham */
+html[data-forum-layout="columns"] #f43 {
+  --forum-filler-image: url("https://i.postimg.cc/pLyrnYkQ/LONDON25.png");
+}
+
+/* SOMBRE — Hammersmith & Fulham */
+html[data-forum-layout="columns"][data-color-scheme="dark"] #f43 {
+  --forum-filler-image: url("https://i.postimg.cc/WpFQZzJM/LONDON41.png");
+}
+
+/* The Other Side > Le Repere
+   Sous-forums : Chez Rioma et Fauve (#f85) ; kidd's den (#f73) ; code & shit (#f79) ; trash island (#f8)
+   4 rubrique(s) : pas de case libre avec ce nombre pair.
+*/
+/* CLAIR — Le Repere */
+html[data-forum-layout="columns"] #f1 {
+  --forum-filler-image: url("https://i.postimg.cc/przG69DY/LONDON48.png");
+}
+
+/* SOMBRE — Le Repere */
+html[data-forum-layout="columns"][data-color-scheme="dark"] #f1 {
+  --forum-filler-image: url("https://i.postimg.cc/8zscrBwZ/LONDON24.png");
+}
+
+
+
 /* cssv11concretejungle.css — ligne source 1778 */
 html[data-forum-layout="columns"] .category .forums {
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -32287,4 +32575,16 @@ html body .fiche-presentation.cj-prelien {
 
 html body .fiche-presentation.cj-prelien .cjpl-meta {
   font-size: 14px;
+}
+
+
+/* Même police que les titres des sujets */
+html body h1.page-title,
+html body h1.page-title a,
+html body .cjcat-title h2,
+html body .cjcat-name {
+  font-family: "DM Serif Display", Georgia, serif !important;
+  font-weight: 400 !important;
+  font-style: normal !important;
+  font-synthesis: none;
 }
