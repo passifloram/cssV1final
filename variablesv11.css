@@ -32588,3 +32588,14 @@ html body .cjcat-name {
   font-style: normal !important;
   font-synthesis: none;
 }
+
+
+/* Masquer visuellement l’ancien bloc d’accueil */
+html body #page-header > .fiche-fond {
+  display: none !important;
+}
+
+/* Supprimer le saut de ligne placé juste avant */
+html body #page-header > br:has(+ .fiche-fond) {
+  display: none !important;
+}
