@@ -33504,27 +33504,7 @@ html body .main_forum .mp_infos > input[type="checkbox"] {
   margin: 0;
 }
 
-/* 03 · Réponses imbriquées sous une présentation */
-@media (min-width: 701px) {
-  html body:not(.tinder-auto-topic):not([data-tinder-mode="active"]):not(:has(.tinder-app, .sms-first, .wrapped-sms, .sms-fond)) .cj-topic .cj-topic__messages .post_row.post .post_row.post:not(.cj-post-no-profile) {
-    display: grid !important;
-    grid-template-columns: 240px minmax(0, 1fr) !important;
-    grid-template-rows: auto 1fr !important;
-    grid-template-areas: none !important;
-    gap: 12px !important;
-    align-items: start !important;
-  }
-
-  html body .cj-topic .cj-topic__messages .post_row.post .post_row.post:not(.cj-post-no-profile) > .post_head {
-    grid-column: 2 / 3 !important;
-    grid-row: 1 / 2 !important;
-    width: auto !important;
-    min-width: 0 !important;
-    margin: 0 !important;
-
-
-
-   /* CJ IMAGES DE LA CHATBOX */
+/* CJ IMAGES DE LA CHATBOX */
 
 html body #chatbox img:not(.user-avatar):not(.user-avatar img):not(.smiley):not(.emoji):not(.emojione):not([src*="/smiles/"]):not([src*="/smilies/"]):not([src*="/twemoji/"]) {
   max-width: min(100%, 320px) !important;
