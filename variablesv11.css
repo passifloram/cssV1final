@@ -33544,3 +33544,32 @@ html body #chatbox img:not([width]):not([style*="width" i]):not(.user-avatar):no
 html body #chatbox img:not([height]):not([style*="height" i]):not(.user-avatar):not(.user-avatar img):not(.smiley):not(.emoji):not(.emojione):not([src*="/smiles/"]):not([src*="/smilies/"]):not([src*="/twemoji/"]) {
   height: auto !important;
 }
+
+
+     /* Empêche les styles de la fiche d’étirer les smileys */
+.prez img[src*="/smiles/"],
+.prez img[src*="/smilies/"] {
+  width: auto !important;
+  height: auto !important;
+  max-width: 100% !important;
+  max-height: none !important;
+  display: inline-block !important;
+  vertical-align: middle;
+}
+
+/* Crush Hour : smileys et emojis dans le fil du texte */
+.tinder-auto-post .postbody img[src*="/twemoji/"],
+.tinder-auto-post .postbody img[src*="/smiles/"],
+.tinder-auto-post .postbody img[src*="/smilies/"] {
+  display: inline !important;
+  margin: 0 !important;
+  width: auto !important;
+  height: auto !important;
+  float: none !important;
+}
+
+/* MP — respecter les dimensions définies dans les messages */
+body#phpbb .message > .message_content.postbody.content img {
+  max-width: 100%;
+  object-fit: contain;
+}
