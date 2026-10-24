@@ -33573,3 +33573,219 @@ body#phpbb .message > .message_content.postbody.content img {
   max-width: 100%;
   object-fit: contain;
 }
+
+
+
+   /* BOUTONS DE LA MESSAGERIE PRIVÉ */
+
+html body .main_forum:has(#privmsgs-menu) {
+  --mp-accent: var(--accentClr);
+  --mp-ink: var(--textColor);
+  --mp-surface: var(--neutral);
+  --mp-primary: linear-gradient(120deg, var(--accentClrDark), color-mix(in srgb, var(--accentClrDark) 75%, var(--two)));
+  --mp-line: color-mix(in srgb, var(--mp-ink) 18%, transparent);
+  --mp-soft: color-mix(in srgb, var(--mp-accent) 12%, var(--mp-surface));
+}
+
+/* Dossiers */
+html body #privmsgs-menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  margin: 24px auto 28px;
+  padding: 0;
+  list-style: none;
+}
+
+html body #privmsgs-menu > li {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  min-height: 42px;
+  margin: 0;
+  padding: 10px 17px;
+  border: 1px solid var(--mp-line);
+  border-radius: 12px;
+  background: var(--mp-surface);
+  color: var(--mp-ink);
+  font: 600 13px/1.4 var(--font, sans-serif);
+  transition: background .18s ease, border-color .18s ease;
+}
+
+html body #privmsgs-menu > li > a {
+  color: inherit !important;
+  text-decoration: none;
+}
+
+html body #privmsgs-menu > li > a::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+}
+
+html body #privmsgs-menu > li > img,
+html body #privmsgs-menu > li > a:has(img) {
+  display: none;
+}
+
+html body #privmsgs-menu > li::before {
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  font-size: 13px;
+  color: var(--mp-accent);
+}
+
+html body #privmsgs-menu > li:has(#i_msg_inbox)::before { content: "\f01c"; }
+html body #privmsgs-menu > li:has(#i_msg_sentbox)::before { content: "\f1d8"; }
+html body #privmsgs-menu > li:has(#i_msg_outbox)::before { content: "\f017"; }
+html body #privmsgs-menu > li:has(#i_msg_savebox)::before { content: "\f187"; }
+
+html body #privmsgs-menu > li:not(:has(a)),
+html body #privmsgs-menu > li:hover {
+  background: var(--mp-soft);
+  border-color: var(--mp-accent);
+  color: var(--mp-accent);
+}
+
+/* Nouveau message */
+html body .main_forum:has(#privmsgs-menu) .newpm_button.buttons {
+  display: inline-flex !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  background: none !important;
+  border: 0 !important;
+  box-shadow: none !important;
+}
+
+html body .main_forum:has(#privmsgs-menu) .newpm_button > a {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 40px;
+  padding: 10px 18px !important;
+  border: 1px solid transparent;
+  border-radius: 12px;
+  background: var(--mp-primary) !important;
+  color: var(--stay-white) !important;
+  font: 600 13px/1.4 var(--font, sans-serif);
+  text-decoration: none;
+  box-shadow: 0 4px 12px color-mix(in srgb, var(--contrast) 10%, transparent);
+}
+
+html body .main_forum:has(#privmsgs-menu) .newpm_button > a::after {
+  content: "+  Nouveau message";
+}
+
+html body .main_forum:has(#privmsgs-menu) .newpm_button img {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  margin: -1px !important;
+  clip-path: inset(50%);
+  overflow: hidden;
+}
+
+/* Filtres et actions */
+html body .main_forum form[name="privmsg_list"] :is(input[type="submit"], select) {
+  box-sizing: border-box;
+  min-height: 38px;
+  max-width: 100%;
+  margin: 0;
+  padding: 9px 14px;
+  border: 1px solid var(--mp-line);
+  border-radius: 10px;
+  background: var(--mp-surface);
+  color: var(--mp-ink);
+  font: 600 12px/1.45 var(--font, sans-serif);
+  text-transform: none;
+  box-shadow: none;
+  cursor: pointer;
+  transition: background .18s ease, border-color .18s ease;
+}
+
+html body .main_forum form[name="privmsg_list"] select {
+  font-weight: 400;
+  padding-right: 8px;
+}
+
+html body .main_forum form[name="privmsg_list"] > div:has(> input[name="delete"]) {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  margin: 0 0 18px;
+  font-size: 0;
+}
+
+html body .main_forum form[name="privmsg_list"] input[name="save"] {
+  background: var(--mp-soft);
+  border-color: color-mix(in srgb, var(--mp-accent) 45%, transparent);
+  color: var(--mp-accent);
+}
+
+html body .main_forum form[name="privmsg_list"] :is(input[name="delete"], input[name="deleteall"]) {
+  background: transparent;
+  border-color: color-mix(in srgb, var(--mp-accent) 40%, transparent);
+  color: var(--mp-accent);
+}
+
+html body .main_forum form[name="privmsg_list"] input[type="submit"]:hover {
+  background: var(--mp-soft);
+  border-color: var(--mp-accent);
+}
+
+html body .main_forum:has(#privmsgs-menu) .newpm_button > a:hover {
+  filter: brightness(1.12);
+}
+
+html body .main_forum form[name="privmsg_list"] > .links_bar,
+html body .main_forum form[name="privmsg_list"] + .links_bar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+html body .main_forum form[name="privmsg_list"] > .links_bar > .right {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 7px;
+  float: none;
+}
+
+html body .main_forum form[name="privmsg_list"] a[href^="javascript:select_switch_privmsg"] {
+  display: inline-block;
+  padding: 5px 8px;
+  color: var(--mp-accent);
+  border-radius: 6px;
+  text-decoration: underline;
+  text-decoration-color: transparent;
+  text-underline-offset: 3px;
+}
+
+html body .main_forum form[name="privmsg_list"] a[href^="javascript:select_switch_privmsg"]:hover {
+  background: var(--mp-soft);
+  text-decoration-color: currentColor;
+}
+
+html body #privmsgs-menu > li:focus-within,
+html body .main_forum:has(#privmsgs-menu) .newpm_button > a:focus-visible,
+html body .main_forum form[name="privmsg_list"] :is(input, select, a):focus-visible {
+  outline: 2px solid var(--mp-accent);
+  outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html body #privmsgs-menu > li,
+  html body .main_forum form[name="privmsg_list"] :is(input, select) {
+    transition: none;
+  }
+}
+
