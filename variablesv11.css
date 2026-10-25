@@ -33849,3 +33849,22 @@ html body .chrono > date:not(:last-of-type)::before {
     grid-template-columns: minmax(0, 70px) minmax(0, 1fr) !important;
   }
 }
+
+
+   /* Story Instagram — en-tête et progression */
+.story-box > .storyn,
+.story-box > #storyid {
+  margin: 0;
+  padding: 0;
+}
+
+.story-box > .storyn {
+  display: flex;
+  gap: 6px;
+}
+
+.story-box > .storyn > .story1,
+.story-box > .storyn > .story2 {
+  flex: 1;
+  min-width: 0;
+}
