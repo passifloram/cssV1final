@@ -67,6 +67,7 @@
      • Boutons de la messagerie privée
      • Chronologies
      • En-tête des stories Instagram
+     • Barre de nav sur tel
 */
 
 /* ──────────────────────────────────────────────────────────
@@ -33901,3 +33902,135 @@ html body .chrono > date:not(:last-of-type)::before {
   flex: 1;
   min-width: 0;
 }
+
+/* ──────────────────────────────────────────────────────────
+   Barre de nav sur tel
+   ────────────────────────────────────────────────────────── */
+
+@media (max-width: 768px), (hover: none) and (pointer: coarse) {
+  html body#phpbb .navbar {
+    box-sizing: border-box !important;
+    height: auto !important;
+    min-height: 56px !important;
+    padding: 6px !important;
+    flex-wrap: wrap !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 2px !important;
+  }
+
+  html body#phpbb .navbar a.mainmenu,
+  html body#phpbb .navbar #fa_notifications {
+    box-sizing: border-box !important;
+    flex: 0 0 44px !important;
+    width: 44px !important;
+    min-width: 44px !important;
+    max-width: 44px !important;
+    height: 44px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    justify-content: center !important;
+    gap: 0 !important;
+    font-size: 0 !important;
+    line-height: 1 !important;
+  }
+
+  html body#phpbb .navbar a.mainmenu::before,
+  html body#phpbb .navbar #fa_notifications::before {
+    flex: 0 0 22px !important;
+    width: 22px !important;
+    height: 22px !important;
+    font-size: 22px !important;
+    line-height: 22px !important;
+  }
+
+  html body#phpbb .sidebar {
+    --cj-touch-button: 44px;
+    --cj-touch-gap: 4px;
+    --cj-touch-padding: 6px;
+    box-sizing: border-box !important;
+    width: calc(var(--cj-touch-button) + 2 * var(--cj-touch-padding) + 1px) !important;
+    height: auto !important;
+    min-height: 0 !important;
+    top: 50% !important;
+    bottom: auto !important;
+    padding: var(--cj-touch-padding) !important;
+    gap: var(--cj-touch-gap) !important;
+    justify-content: flex-start !important;
+    transform: translateY(-50%) !important;
+  }
+
+  html body#phpbb .sidebar .switch-theme,
+  html body#phpbb .sidebar .switch-theme > div,
+  html body#phpbb .sidebar .switch-theme [data-theme-controls],
+  html body#phpbb .sidebar .color-scheme-toggle,
+  html body#phpbb .sidebar #switcheroo .forum-layout-toggle,
+  html body#phpbb .sidebar #switcheroo > .switcheroo__squircles > .switcheroo__squircle,
+  html body#phpbb .sidebar #FAM-button,
+  html body#phpbb .sidebar #FAM-button-open,
+  html body#phpbb .sidebar .sidebar_bottom > a {
+    box-sizing: border-box !important;
+    flex: 0 0 var(--cj-touch-button) !important;
+    width: var(--cj-touch-button) !important;
+    min-width: var(--cj-touch-button) !important;
+    max-width: var(--cj-touch-button) !important;
+    height: var(--cj-touch-button) !important;
+    min-height: var(--cj-touch-button) !important;
+    max-height: var(--cj-touch-button) !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  html body#phpbb .sidebar #switcheroo,
+  html body#phpbb .sidebar #switcheroo > .switcheroo__squircles {
+    flex: 0 0 auto !important;
+    width: var(--cj-touch-button) !important;
+    min-width: var(--cj-touch-button) !important;
+    max-width: var(--cj-touch-button) !important;
+    height: auto !important;
+    min-height: 0 !important;
+    max-height: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    gap: var(--cj-touch-gap) !important;
+    justify-content: flex-start !important;
+  }
+
+  html body#phpbb .sidebar #switcheroo > .switcheroo__squircles > .switcheroo__squircle.active > a,
+  html body#phpbb .sidebar #switcheroo > .switcheroo__squircles > .switcheroo__squircle:not(.cj-switcheroo-toggle) .switcheroo__avatar,
+  html body#phpbb .sidebar #switcheroo > .switcheroo__squircles > .switcheroo__squircle:not(.cj-switcheroo-toggle) .switcheroo__avatar img {
+    box-sizing: border-box !important;
+    width: var(--cj-touch-button) !important;
+    min-width: var(--cj-touch-button) !important;
+    max-width: var(--cj-touch-button) !important;
+    height: var(--cj-touch-button) !important;
+    min-height: var(--cj-touch-button) !important;
+    max-height: var(--cj-touch-button) !important;
+    object-fit: cover !important;
+  }
+
+  html body#phpbb .sidebar .color-scheme-toggle .icon > i,
+  html body#phpbb .sidebar .color-scheme-toggle .icon > i::before,
+  html body#phpbb .sidebar .forum-layout-toggle > i,
+  html body#phpbb .sidebar #switcheroo > .switcheroo__squircles > .switcheroo__squircle > i,
+  html body#phpbb .sidebar #FAM-button > i,
+  html body#phpbb .sidebar #FAM-button-open > i,
+  html body#phpbb .sidebar .sidebar_bottom > a > i {
+    font-size: 22px !important;
+    line-height: 1 !important;
+  }
+}
+
+/* paysage */
+@media (max-width: 768px) and (max-height: 480px),
+       (hover: none) and (pointer: coarse) and (max-height: 480px) {
+  html body#phpbb .sidebar {
+    --cj-touch-button: 40px;
+    --cj-touch-gap: 3px;
+    --cj-touch-padding: 5px;
+    top: 62px !important;
+    bottom: auto !important;
+    transform: none !important;
+  }
+}
+
