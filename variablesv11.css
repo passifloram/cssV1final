@@ -1,63 +1,79 @@
-/* 
-   SOMMAIRE — rechercher un repère [CJ-XX] avec Ctrl + F
+/* Sommaire CSS, faire une recherche Ctrl + F pour naviguer <3 
 
-   [CJ-00] Polices, icônes et dépendances
-   [CJ-01] Variables du thème clair
-   [CJ-02] Variables du thème sombre
-   [CJ-03] Structure, fond, défilement et bannière
-   [CJ-04] Textes, liens, titres, boutons et champs
-   [CJ-05] Navigation, barre d’outils et notifications
-   [CJ-06] Barre latérale, thème et changement de compte
-   [CJ-07] Accueil, actualités, Discord et top-sites
-   [CJ-08] Catégories et forums
-   [CJ-09] Liste des sujets et pagination
-   [CJ-10] Sujets, messages et éditeur
-   [CJ-11] Profils complets et champs
-   [CJ-12] Profils en fenêtre
-   [CJ-13] Membres et Directory
-   [CJ-14] Qui est en ligne
-   [CJ-15] Messenger et messages privés
-   [CJ-16] Blogs, SMS, Instagram et Crush Hour
-   [CJ-17] Balises, fiches et modèles RP
-   [CJ-18] Chatbox, badges et carte
-   [CJ-19] Animations
-   [CJ-20.01] Anciens modèles
-   [CJ-20.02] Éléments du thème
-   [CJ-20.03] Accueil
-   [CJ-20.04] Catégories et derniers messages
-   [CJ-20.05] Fonds et ajustements divers
-   [CJ-20.06] Structure et composants du forum
-   [CJ-20.07] Badges
-   [CJ-20.08] Chatbox
-   [CJ-20.09] Navigation et Messenger
-   [CJ-20.10] Carte des logements
-   [CJ-20.11] En-têtes des sujets
-   [CJ-20.12] Pages de sujets
-   [CJ-20.13] Balises et fiches
-   [CJ-20.14] Qui est en ligne
-   [CJ-20.15] Modèles RP
-   [CJ-20.16] Fenêtres de profils
-   [CJ-20.17] Liste des sujets
-   [CJ-20.18] SMS et Instagram
-   [CJ-20.19] Fiches complémentaires
-   [CJ-20.20] Fiches RP et onglets
-   [CJ-20.21] Structure héritée et compatibilité
-   [CJ-20.22] Finitions des sujets, pré-liens et titres
-   [CJ-21] Catégories — styles complémentaires
-   [CJ-22] Compatibilité des anciens contenus et templates
-   [CJ-23] Navigation, comptes et Messenger — styles complémentaires
-   [CJ-24] Profils dans les messages — styles complémentaires
-   [CJ-25] En-têtes, actions et pagination des sujets
-   [CJ-26] Pages de sujets et outils de lecture
-   [CJ-27] Fenêtres de profils — styles complémentaires
-   [CJ-28] Fiches RP et onglets
-   [CJ-29] Réglages finaux du forum
+   Les bases du thème
+     • Polices et icônes
+     • Les couleurs du thème clair
+     • Les couleurs du thème sombre
+     • Fond, bannière et structure de la page
+     • Textes, titres, liens et boutons
+     • Navigation et notifications
+     • Barre latérale et changement de compte
+     • Accueil, actualités et liens utiles
+     • Catégories et forums
+     • Liste des sujets et pagination
+     • Messages et éditeur
+     • Profils et champs personnalisés
+     • Profils en fenêtre
+     • Liste des membres et Directory
+     • Qui est en ligne
+     • Messenger et messagerie privée
+     • Blogs et réseaux sociaux
+     • Balises, fiches et modèles RP
+     • Chatbox, badges et carte
+     • Animations
 
-   Les sections suivent l’ordre de priorité du forum.
-   Les styles mobiles et sombres restent près des composants concernés.
+   Les composants du forum
+     • Anciens modèles de messages
+     • Éléments du thème
+     • Mise en page de l’accueil
+     • Catégories et derniers messages
+     • Fonds et habillage
+     • Structure des pages et éléments communs
+     • Badges
+     • Chatbox
+     • Navigation et Messenger
+     • Carte des logements
+     • En-têtes des sujets
+     • Mise en page des sujets
+     • Balises et fiches
+     • Mise en page du Qui est en ligne
+     • Modèles RP
+     • Fenêtres de profil
+     • Présentation de la liste des sujets
+     • SMS et Instagram
+     • Autres fiches
+     • Fiches RP et onglets
+     • Compatibilité avec les anciens éléments
+     • Titres, sujets et pré-liens
+
+   Les ajustements du thème
+     • Finitions des catégories
+     • Anciens contenus et templates
+     • Finitions de la navigation et des comptes
+     • Profils dans les messages
+     • Actions et pagination des sujets
+     • Lecture des sujets et outils associés
+     • Finitions des fenêtres de profil
+     • Finitions des fiches et des onglets
+     • Palette actuelle et derniers réglages
+
+   Les dernières retouches
+     • Hauteur des lignes de sujets
+     • Présentation de la boîte de réception
+     • Taille des images dans la chatbox
+     • Smileys dans les fiches
+     • Smileys et emojis dans Crush Hour
+     • Images dans les messages privés
+     • Boutons de la messagerie privée
+     • Chronologies
+     • En-tête des stories Instagram
 */
 
-/* Dépendances, polices et icônes */
+/* ──────────────────────────────────────────────────────────
+   Les bases du thème
+
+   Polices et icônes
+   ────────────────────────────────────────────────────────── */
 @import url("https://passifloram.github.io/CSSPAV11/anciencoderedefini.css");
 @import url("https://passifloram.github.io/CSSPAV11/complementcssblanktheme.css");
 @import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap");
@@ -70,9 +86,7 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css");
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css");
 
-/* ==========================================================================
-   [CJ-00] Polices, icônes et dépendances
-   ========================================================================== */
+/* Polices personnalisées */
 
 @font-face  {
   font-family: "CJ Sujet Icons";
@@ -102,9 +116,9 @@
   text-rendering: optimizeLegibility;
 }
 
-/* ==========================================================================
-   [CJ-01] Variables du thème clair
-   ========================================================================== */
+/* ──────────────────────────────────────────────────────────
+   Les couleurs du thème clair
+   ────────────────────────────────────────────────────────── */
 
 :root {
   --fond: linear-gradient(40.15deg, #d3b37773, 10.15%, #8e6381a6 55%, #a5865d59 90%), url("https://images2.imgbox.com/b4/73/ZCN80oBO_o.png");
@@ -144,17 +158,17 @@
   --cj-legacy-v2-ready: 1;
 }
 
-/* ==========================================================================
-   [CJ-02] Variables du thème sombre
-   ========================================================================== */
+/* ──────────────────────────────────────────────────────────
+   Les couleurs du thème sombre
+   ────────────────────────────────────────────────────────── */
 
 [data-color-scheme="dark"] {
   --fond: linear-gradient(40.15deg, #7a684473, 10.15%, #552d49a6 55%, #7d490459 90%), url("https://images2.imgbox.com/b4/73/ZCN80oBO_o.png");
 }
 
-/* ==========================================================================
-   [CJ-03] Structure, fond, défilement et bannière
-   ========================================================================== */
+/* ──────────────────────────────────────────────────────────
+   Fond, bannière et structure de la page
+   ────────────────────────────────────────────────────────── */
 
 .panel.row2.sig {
   text-align: center;
@@ -320,9 +334,9 @@ html body a#header {
   animation: none !important;
 }
 
-/* ==========================================================================
-   [CJ-04] Textes, liens, titres, boutons et champs
-   ========================================================================== */
+/* ──────────────────────────────────────────────────────────
+   Textes, titres, liens et boutons
+   ────────────────────────────────────────────────────────── */
 
 .ajax-profil_valid {
   vertical-align: middle;
@@ -381,9 +395,9 @@ a {
   text-shadow: 0 0 6px #aaaaaa;
 }
 
-/* ==========================================================================
-   [CJ-05] Navigation, barre d’outils et notifications
-   ========================================================================== */
+/* ──────────────────────────────────────────────────────────
+   Navigation et notifications
+   ────────────────────────────────────────────────────────── */
 
 .navbar a.mainmenu,
 .navbar #fa_notifications {
@@ -441,9 +455,9 @@ ul#notif_list {
   transition: color 0.25s ease, background-color 0.25s ease, border-color 0.25s ease !important;
 }
 
-/* ==========================================================================
-   [CJ-06] Barre latérale, thème et changement de compte
-   ========================================================================== */
+/* ──────────────────────────────────────────────────────────
+   Barre latérale et changement de compte
+   ────────────────────────────────────────────────────────── */
 
 html body .sidebar .switch-theme .color-scheme-toggle {
   position: relative !important;
@@ -687,9 +701,9 @@ html[data-color-scheme="dark"] body
   outline: none;
 }
 
-/* ==========================================================================
-   [CJ-07] Accueil, actualités, Discord et top-sites
-   ========================================================================== */
+/* ──────────────────────────────────────────────────────────
+   Accueil, actualités et liens utiles
+   ────────────────────────────────────────────────────────── */
 
 #cjpa-v11 {
   --cj-card: var(--neutral,#f6f2f3);
@@ -2647,9 +2661,9 @@ html[data-color-scheme] .main_forum #page-header .fiche-fond > .up.up {
   box-shadow: none !important;
 }
 
-/* ==========================================================================
-   [CJ-08] Catégories et forums
-   ========================================================================== */
+/* ──────────────────────────────────────────────────────────
+   Catégories et forums
+   ────────────────────────────────────────────────────────── */
 
 .cjcat {
   --cat-image-width: 164px;
@@ -3657,17 +3671,17 @@ html[data-forum-layout="normal"] .category .forum_details.forum_subforums #subfo
   transition: var(--transi);
 }
 
-/* ==========================================================================
-   [CJ-09] Liste des sujets et pagination
-   ========================================================================== */
+/* ──────────────────────────────────────────────────────────
+   Liste des sujets et pagination
+   ────────────────────────────────────────────────────────── */
 
 .main_forum .cj-page-head {
   float: none !important;
 }
 
-/* ==========================================================================
-   [CJ-10] Sujets, messages et éditeur
-   ========================================================================== */
+/* ──────────────────────────────────────────────────────────
+   Messages et éditeur
+   ────────────────────────────────────────────────────────── */
 
 #parent_editor_simple > #smiley-box {
   float: left;
@@ -3939,9 +3953,9 @@ html#sceditor_smilies body#sce_smilies_body {
   text-underline-offset: 4px;
 }
 
-/* ==========================================================================
-   [CJ-11] Profils complets et champs
-   ========================================================================== */
+/* ──────────────────────────────────────────────────────────
+   Profils et champs personnalisés
+   ────────────────────────────────────────────────────────── */
 
 #wombat.cj-profile .user_profile.cj-profile__layout {
   scrollbar-gutter: stable;
@@ -4272,9 +4286,9 @@ body:not(.tinder-auto-topic):not([data-tinder-mode="active"]):not(:has(.sms-firs
 
 }
 
-/* ==========================================================================
-   [CJ-12] Profils en fenêtre
-   ========================================================================== */
+/* ──────────────────────────────────────────────────────────
+   Profils en fenêtre
+   ────────────────────────────────────────────────────────── */
 
 html body #wombat.cj-profile {
   --popup-fond: var(--fond-principal,var(--neutral,#f8f6f2));
@@ -4764,9 +4778,9 @@ html body #wombat.cj-profile .cj-profile__selfie::after {
   mask: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22120%22%20height%3D%22120%22%20viewBox%3D%220%200%20120%20120%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3Cpath%20id%3D%22upper%22%20d%3D%22M%2012%2C60%20A%2048%2C48%200%200%2C1%20108%2C60%22%2F%3E%0A%20%20%20%20%3Cpath%20id%3D%22lower%22%20d%3D%22M%2012%2C60%20A%2048%2C48%200%200%2C0%20108%2C60%22%2F%3E%0A%20%20%20%20%3Cmask%20id%3D%22ink%22%3E%0A%20%20%20%20%20%20%3Crect%20width%3D%22120%22%20height%3D%22120%22%20fill%3D%22white%22%2F%3E%0A%20%20%20%20%20%20%3Cg%20fill%3D%22black%22%3E%0A%20%20%20%20%20%20%20%20%3Cpath%20d%3D%22M25%2012l2%201-2%206-1-1zM101%2026l1%202-5%203-1-1zM13%2080l5-1%201%201-5%202zM82%20105l2-4%201%201-1%204z%22%2F%3E%0A%20%20%20%20%20%20%20%20%3Ccircle%20cx%3D%2243%22%20cy%3D%2251%22%20r%3D%22.65%22%2F%3E%3Ccircle%20cx%3D%2273%22%20cy%3D%2255%22%20r%3D%22.6%22%2F%3E%0A%20%20%20%20%20%20%20%20%3Ccircle%20cx%3D%2234%22%20cy%3D%2231%22%20r%3D%22.65%22%2F%3E%3Ccircle%20cx%3D%2289%22%20cy%3D%2289%22%20r%3D%22.75%22%2F%3E%0A%20%20%20%20%20%20%20%20%3Cpath%20d%3D%22M51%2072h5v.7h-5zM74%2041l1%201-3%202-.5-1z%22%2F%3E%0A%20%20%20%20%20%20%3C%2Fg%3E%0A%20%20%20%20%3C%2Fmask%3E%0A%20%20%3C%2Fdefs%3E%0A%20%20%3Cg%20fill%3D%22white%22%20mask%3D%22url%28%23ink%29%22%3E%0A%20%20%20%20%3Cg%20fill%3D%22none%22%20stroke%3D%22white%22%3E%0A%20%20%20%20%20%20%3Ccircle%20cx%3D%2260%22%20cy%3D%2260%22%20r%3D%2257%22%20stroke-width%3D%221.1%22%20stroke-dasharray%3D%22141%201.5%2075%201%20139.6%22%2F%3E%0A%20%20%20%20%20%20%3Ccircle%20cx%3D%2260.4%22%20cy%3D%2259.7%22%20r%3D%2239.5%22%20stroke-width%3D%22.85%22%2F%3E%0A%20%20%20%20%20%20%3Cpath%20d%3D%22M31%2063h58M36%2081h48%22%20stroke-width%3D%22.8%22%2F%3E%0A%20%20%20%20%3C%2Fg%3E%0A%20%20%20%20%3Cg%20font-family%3D%22Arial%2CHelvetica%2Csans-serif%22%20font-weight%3D%22700%22%20text-anchor%3D%22middle%22%3E%0A%20%20%20%20%20%20%3Ctext%20font-size%3D%229.5%22%20letter-spacing%3D%221.1%22%3E%3CtextPath%20href%3D%22%23upper%22%20startOffset%3D%2250%25%22%3ELONDON%20POSTAGE%20SERVICE%3C%2FtextPath%3E%3C%2Ftext%3E%0A%20%20%20%20%20%20%3Ctext%20font-size%3D%229%22%20letter-spacing%3D%221.5%22%20dy%3D%227%22%3E%3CtextPath%20href%3D%22%23lower%22%20startOffset%3D%2250%25%22%3EUNITED%20KINGDOM%3C%2FtextPath%3E%3C%2Ftext%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%2260%22%20y%3D%2256%22%20font-size%3D%2218%22%20letter-spacing%3D%222%22%3EMAIL%3C%2Ftext%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%2260%22%20y%3D%2276%22%20font-size%3D%2210%22%20letter-spacing%3D%222.8%22%3ELONDON%3C%2Ftext%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%2260%22%20y%3D%2294%22%20font-size%3D%229%22%20letter-spacing%3D%222%22%3EUK%3C%2Ftext%3E%0A%20%20%20%20%3C%2Fg%3E%0A%20%20%20%20%3Ccircle%20cx%3D%2212%22%20cy%3D%2260%22%20r%3D%221.6%22%2F%3E%3Ccircle%20cx%3D%22108%22%20cy%3D%2260%22%20r%3D%221.6%22%2F%3E%0A%20%20%3C%2Fg%3E%0A%3C%2Fsvg%3E%0A") center / contain no-repeat;
 }
 
-/* ==========================================================================
-   [CJ-13] Membres et Directory
-   ========================================================================== */
+/* ──────────────────────────────────────────────────────────
+   Liste des membres et Directory
+   ────────────────────────────────────────────────────────── */
 
 .directory-form[open] > .directory-form-toggle {
   box-shadow: inset 3px 0 0 currentColor;
@@ -4884,9 +4898,9 @@ html[data-color-scheme="light"] .directory-pagination button.is-active {
     rgba(255, 255, 255, .12);
 }
 
-/* ==========================================================================
-   [CJ-14] Qui est en ligne
-   ========================================================================== */
+/* ──────────────────────────────────────────────────────────
+   Qui est en ligne
+   ────────────────────────────────────────────────────────── */
 
 #lastuser_avatar {
   filter: none;
@@ -5033,9 +5047,9 @@ html[data-color-scheme="light"] .directory-pagination button.is-active {
 
 }
 
-/* ==========================================================================
-   [CJ-15] Messenger et messages privés
-   ========================================================================== */
+/* ──────────────────────────────────────────────────────────
+   Messenger et messagerie privée
+   ────────────────────────────────────────────────────────── */
 
 #privmsgs-menu li {
   align-items: center;
@@ -5149,9 +5163,9 @@ html[data-color-scheme="light"] .directory-pagination button.is-active {
   outline: none;
 }
 
-/* ==========================================================================
-   [CJ-16] Blogs, SMS, Instagram et Crush Hour
-   ========================================================================== */
+/* ──────────────────────────────────────────────────────────
+   Blogs et réseaux sociaux
+   ────────────────────────────────────────────────────────── */
 
 body.tinder-auto-topic .tinder-auto-opening > .post_head,
 body.tinder-auto-topic .tinder-auto-opening > .post_profile {
@@ -5726,9 +5740,9 @@ body:not(.tinder-auto-topic) .post_row.post.cj-post-no-profile {
   max-heigth: 380px !important;
 }
 
-/* ==========================================================================
-   [CJ-17] Balises, fiches et modèles RP
-   ========================================================================== */
+/* ──────────────────────────────────────────────────────────
+   Balises, fiches et modèles RP
+   ────────────────────────────────────────────────────────── */
 
 html :is(.prez, .fiche-presentation) {
   box-shadow: none !important;
@@ -6555,9 +6569,9 @@ html body :is(temp4, temp5, .fiche-rp).rp-sans-lettrine :is(.rp_txt, .rp-texte):
   wdth: 100%;
 }
 
-/* ==========================================================================
-   [CJ-18] Chatbox, badges et carte
-   ========================================================================== */
+/* ──────────────────────────────────────────────────────────
+   Chatbox, badges et carte
+   ────────────────────────────────────────────────────────── */
 
 html body #wombat.cj-profile .profile_infos.cj-profile__main [data-cj-zone="badges"].cj-profile__drawer-content > .profile_field.cj-profile__badges-field {
   display: block !important;
@@ -7065,9 +7079,9 @@ body.chatbox #chatbox_footer {
   filter: none !important;
 }
 
-/* ==========================================================================
-   [CJ-19] Animations
-   ========================================================================== */
+/* ──────────────────────────────────────────────────────────
+   Animations
+   ────────────────────────────────────────────────────────── */
 
 @keyframes cj-titre-beat-fade {
   0%, 100% {
@@ -7328,9 +7342,11 @@ body.chatbox #chatbox_footer {
 
 }
 
-/* ==========================================================================
-   [CJ-20.01] Anciens modèles
-   ========================================================================== */
+/* ──────────────────────────────────────────────────────────
+   Les composants du forum
+
+   Anciens modèles de messages
+   ────────────────────────────────────────────────────────── */
 
 .post:has(:is(.prez, .fiche-presentation)) .post_profile {
   display: none;
@@ -7803,9 +7819,9 @@ html:not([data-color-scheme="dark"]) body:not([data-color-scheme="dark"]) .main_
   box-shadow: none !important;
 }
 
-/* ==========================================================================
-   [CJ-20.02] Éléments du thème
-   ========================================================================== */
+/* ──────────────────────────────────────────────────────────
+   Éléments du thème
+   ────────────────────────────────────────────────────────── */
 
 .navigation_chain {
   font-size: 0;
@@ -7865,9 +7881,9 @@ html:not([data-color-scheme="dark"]) body:not([data-color-scheme="dark"]) .main_
   margin-top: 10px;
 }
 
-/* ==========================================================================
-   [CJ-20.03] Accueil
-   ========================================================================== */
+/* ──────────────────────────────────────────────────────────
+   Mise en page de l’accueil
+   ────────────────────────────────────────────────────────── */
 
 #cjpa-v11 {
   box-sizing: border-box;
@@ -9567,9 +9583,9 @@ html:not([data-color-scheme="dark"]) body:not([data-color-scheme="dark"]) .main_
   overflow-wrap: anywhere;
 }
 
-/* ==========================================================================
-   [CJ-20.04] Catégories et derniers messages
-   ========================================================================== */
+/* ──────────────────────────────────────────────────────────
+   Catégories et derniers messages
+   ────────────────────────────────────────────────────────── */
 
 .cjcat {
   color: var(--textColor);
@@ -9899,9 +9915,9 @@ html[data-color-scheme="dark"] body
   border-color: #929bff !important;
 }
 
-/* ==========================================================================
-   [CJ-20.05] Fonds et ajustements divers
-   ========================================================================== */
+/* ──────────────────────────────────────────────────────────
+   Fonds et habillage
+   ────────────────────────────────────────────────────────── */
 
 .qeel-img img {
   width: 100%;
@@ -9957,9 +9973,9 @@ a.group-mentiontag[title="everyone"] {
   border: none !important;
 }
 
-/* ==========================================================================
-   [CJ-20.06] Structure et composants du forum
-   ========================================================================== */
+/* ──────────────────────────────────────────────────────────
+   Structure des pages et éléments communs
+   ────────────────────────────────────────────────────────── */
 
 #last_user {
   position: relative;
@@ -14544,9 +14560,9 @@ body.index-columns .forum_stats span.forum-stat-long,
 
 }
 
-/* ==========================================================================
-   [CJ-20.07] Badges
-   ========================================================================== */
+/* ──────────────────────────────────────────────────────────
+   Badges
+   ────────────────────────────────────────────────────────── */
 
 #wombat.cj-profile .cj-profile__drawer-content .profile_field.cj-profile__badges-field {
   display: block !important;
@@ -14748,9 +14764,9 @@ html body .post_row .cj-post-badge:hover .cj-badge__tooltip {
   transform: translate(-50%, 0) !important;
 }
 
-/* ==========================================================================
-   [CJ-20.08] Chatbox
-   ========================================================================== */
+/* ──────────────────────────────────────────────────────────
+   Chatbox
+   ────────────────────────────────────────────────────────── */
 
 body:has(#chatbox_header) {
   min-height: 100vh !important;
@@ -15263,9 +15279,9 @@ body.chatbox #chatbox_footer {
 
 }
 
-/* ==========================================================================
-   [CJ-20.09] Navigation et Messenger
-   ========================================================================== */
+/* ──────────────────────────────────────────────────────────
+   Navigation et Messenger
+   ────────────────────────────────────────────────────────── */
 
 #switcheroo {
   overflow: visible !important;
@@ -16012,9 +16028,9 @@ ul#notif_list {
 
 }
 
-/* ==========================================================================
-   [CJ-20.10] Carte des logements
-   ========================================================================== */
+/* ──────────────────────────────────────────────────────────
+   Carte des logements
+   ────────────────────────────────────────────────────────── */
 
 .cj-housing-map {
   position: relative;
@@ -16249,9 +16265,9 @@ ul#notif_list {
 
 }
 
-/* ==========================================================================
-   [CJ-20.11] En-têtes des sujets
-   ========================================================================== */
+/* ──────────────────────────────────────────────────────────
+   En-têtes des sujets
+   ────────────────────────────────────────────────────────── */
 
 .cj-topic {
   padding: clamp(12px, 2.5vw, 28px);
@@ -16298,9 +16314,9 @@ ul#notif_list {
   font: inherit;
 }
 
-/* ==========================================================================
-   [CJ-20.12] Pages de sujets
-   ========================================================================== */
+/* ──────────────────────────────────────────────────────────
+   Mise en page des sujets
+   ────────────────────────────────────────────────────────── */
 
 .cj-topic {
   display: block;
@@ -16788,9 +16804,9 @@ ul#notif_list {
   float: none !important;
 }
 
-/* ==========================================================================
-   [CJ-20.13] Balises et fiches
-   ========================================================================== */
+/* ──────────────────────────────────────────────────────────
+   Balises et fiches
+   ────────────────────────────────────────────────────────── */
 
 :root {
   --cjf-paper: #f8f6f2;
@@ -18359,9 +18375,9 @@ html:not([data-color-scheme="dark"]) body:not([data-color-scheme="dark"]) .main_
   background: var(--fond-citation-clair, var(--fond-fiche-clair, #e7e2dc)) !important;
 }
 
-/* ==========================================================================
-   [CJ-20.14] Qui est en ligne
-   ========================================================================== */
+/* ──────────────────────────────────────────────────────────
+   Mise en page du Qui est en ligne
+   ────────────────────────────────────────────────────────── */
 
 .cjq-banner {
   position: relative;
@@ -18810,9 +18826,9 @@ html:not([data-color-scheme="dark"]) body:not([data-color-scheme="dark"]) .main_
 
 }
 
-/* ==========================================================================
-   [CJ-20.15] Modèles RP
-   ========================================================================== */
+/* ──────────────────────────────────────────────────────────
+   Modèles RP
+   ────────────────────────────────────────────────────────── */
 
 html body :is(temp4, temp5, .fiche-rp) {
   display: block;
@@ -18957,9 +18973,9 @@ html body :is(temp4, temp5, .fiche-rp) :is(.temp_cappuccicon,.rp-embleme) {
   margin: 0 0 20px !important;
 }
 
-/* ==========================================================================
-   [CJ-20.16] Fenêtres de profils
-   ========================================================================== */
+/* ──────────────────────────────────────────────────────────
+   Fenêtres de profil
+   ────────────────────────────────────────────────────────── */
 
 .wombat-aside {
   max-height: calc(100dvh - 32px);
@@ -19086,9 +19102,9 @@ html body #wombat.cj-profile svg.cj-profile__gauge-chart {
 
 }
 
-/* ==========================================================================
-   [CJ-20.17] Liste des sujets
-   ========================================================================== */
+/* ──────────────────────────────────────────────────────────
+   Présentation de la liste des sujets
+   ────────────────────────────────────────────────────────── */
 
 .main_forum :is(.topicslist_row,.bloglist) {
   position: relative !important;
@@ -19320,9 +19336,9 @@ html body #wombat.cj-profile svg.cj-profile__gauge-chart {
   justify-self: stretch !important;
 }
 
-/* ==========================================================================
-   [CJ-20.18] SMS et Instagram
-   ========================================================================== */
+/* ──────────────────────────────────────────────────────────
+   SMS et Instagram
+   ────────────────────────────────────────────────────────── */
 
 .bloglist {
   background: var(--neutral);
@@ -19907,9 +19923,9 @@ html body #wombat.cj-profile svg.cj-profile__gauge-chart {
   cursor: pointer;
 }
 
-/* ==========================================================================
-   [CJ-20.19] Fiches complémentaires
-   ========================================================================== */
+/* ──────────────────────────────────────────────────────────
+   Autres fiches
+   ────────────────────────────────────────────────────────── */
 
 .fiche-presentation.cj-fiche {
   width: 100%;
@@ -20993,9 +21009,9 @@ html body #wombat.cj-profile svg.cj-profile__gauge-chart {
 
 }
 
-/* ==========================================================================
-   [CJ-20.20] Fiches RP et onglets
-   ========================================================================== */
+/* ──────────────────────────────────────────────────────────
+   Fiches RP et onglets
+   ────────────────────────────────────────────────────────── */
 
 .ab {
   font-size: 15px;
@@ -21265,9 +21281,9 @@ img.lsh_de {
   margin-left: -30px;
 }
 
-/* ==========================================================================
-   [CJ-20.21] Structure héritée et compatibilité
-   ========================================================================== */
+/* ──────────────────────────────────────────────────────────
+   Compatibilité avec les anciens éléments
+   ────────────────────────────────────────────────────────── */
 
 body {
   background: var(--neutralGradient);
@@ -21645,9 +21661,9 @@ html body a#header {
                 SizingMethod="auto expand");
 }
 
-/* ==========================================================================
-   [CJ-20.22] Finitions des sujets, pré-liens et titres
-   ========================================================================== */
+/* ──────────────────────────────────────────────────────────
+   Titres, sujets et pré-liens
+   ────────────────────────────────────────────────────────── */
 
 .post_row .cj-post-tabs__tab.selected > i,
 .post_row .cj-post-tabs__tab[aria-selected="true"] > i,
@@ -22178,9 +22194,11 @@ html body #page-header > br:has(+ .fiche-fond) {
   display: none !important;
 }
 
-/* ==========================================================================
-   [CJ-21] Catégories — styles complémentaires
-   ========================================================================== */
+/* ──────────────────────────────────────────────────────────
+   Les ajustements du thème
+
+   Finitions des catégories
+   ────────────────────────────────────────────────────────── */
 
 .cjcat {
   --cat-image-width: 164px;
@@ -23066,9 +23084,9 @@ html[data-forum-layout="columns"] .cjcat .cjcat-has-picture .cjcat-metadata {
   column-gap: 14px;
 }
 
-/* ==========================================================================
-   [CJ-22] Compatibilité des anciens contenus et templates
-   ========================================================================== */
+/* ──────────────────────────────────────────────────────────
+   Anciens contenus et templates
+   ────────────────────────────────────────────────────────── */
 
 .qeel {
   background: var(--transparent-two);
@@ -26388,9 +26406,9 @@ t5 {
   cursor: pointer;
 }
 
-/* ==========================================================================
-   [CJ-23] Navigation, comptes et Messenger — styles complémentaires
-   ========================================================================== */
+/* ──────────────────────────────────────────────────────────
+   Finitions de la navigation et des comptes
+   ────────────────────────────────────────────────────────── */
 
 #switcheroo {
   position: relative !important;
@@ -28265,9 +28283,9 @@ ul#notif_list {
 
 }
 
-/* ==========================================================================
-   [CJ-24] Profils dans les messages — styles complémentaires
-   ========================================================================== */
+/* ──────────────────────────────────────────────────────────
+   Profils dans les messages
+   ────────────────────────────────────────────────────────── */
 
 body:not(.tinder-auto-topic):not([data-tinder-mode="active"]):not(:has(.sms-first, .wrapped-sms, .sms-fond)) .post_row.post:has(> .cj-post-profile) {
   --cjp-paper: var(--neutral, #f8f6f2);
@@ -28984,9 +29002,9 @@ html:not([data-color-scheme="dark"]) body:not([data-color-scheme="dark"]):not(.t
   color: var(--cjp-ink);
 }
 
-/* ==========================================================================
-   [CJ-25] En-têtes, actions et pagination des sujets
-   ========================================================================== */
+/* ──────────────────────────────────────────────────────────
+   Actions et pagination des sujets
+   ────────────────────────────────────────────────────────── */
 
 .cj-topic {
   --cjt-paper: var(--neutral, #f8f6f2);
@@ -29278,9 +29296,9 @@ body:not(.tinder-auto-topic):not([data-tinder-mode="active"]):not(:has(.sms-firs
 
 }
 
-/* ==========================================================================
-   [CJ-26] Pages de sujets et outils de lecture
-   ========================================================================== */
+/* ──────────────────────────────────────────────────────────
+   Lecture des sujets et outils associés
+   ────────────────────────────────────────────────────────── */
 
 .cj-topic {
   --cjt-paper: var(--neutral, #f8f6f2);
@@ -30364,9 +30382,9 @@ body:is(.tinder-auto-topic, [data-tinder-mode="active"]) .cj-topic, body:has(.ti
   justify-content: flex-end !important;
 }
 
-/* ==========================================================================
-   [CJ-27] Fenêtres de profils — styles complémentaires
-   ========================================================================== */
+/* ──────────────────────────────────────────────────────────
+   Finitions des fenêtres de profil
+   ────────────────────────────────────────────────────────── */
 
 html body #wombat.cj-profile {
   --popup-fond: var(--fond-principal,var(--neutral,#f8f6f2));
@@ -30928,9 +30946,9 @@ html body #wombat.cj-profile .cj-profile__selfie::after {
   mask: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22120%22%20height%3D%22120%22%20viewBox%3D%220%200%20120%20120%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3Cpath%20id%3D%22upper%22%20d%3D%22M%2012%2C60%20A%2048%2C48%200%200%2C1%20108%2C60%22%2F%3E%0A%20%20%20%20%3Cpath%20id%3D%22lower%22%20d%3D%22M%2012%2C60%20A%2048%2C48%200%200%2C0%20108%2C60%22%2F%3E%0A%20%20%20%20%3Cmask%20id%3D%22ink%22%3E%0A%20%20%20%20%20%20%3Crect%20width%3D%22120%22%20height%3D%22120%22%20fill%3D%22white%22%2F%3E%0A%20%20%20%20%20%20%3Cg%20fill%3D%22black%22%3E%0A%20%20%20%20%20%20%20%20%3Cpath%20d%3D%22M25%2012l2%201-2%206-1-1zM101%2026l1%202-5%203-1-1zM13%2080l5-1%201%201-5%202zM82%20105l2-4%201%201-1%204z%22%2F%3E%0A%20%20%20%20%20%20%20%20%3Ccircle%20cx%3D%2243%22%20cy%3D%2251%22%20r%3D%22.65%22%2F%3E%3Ccircle%20cx%3D%2273%22%20cy%3D%2255%22%20r%3D%22.6%22%2F%3E%0A%20%20%20%20%20%20%20%20%3Ccircle%20cx%3D%2234%22%20cy%3D%2231%22%20r%3D%22.65%22%2F%3E%3Ccircle%20cx%3D%2289%22%20cy%3D%2289%22%20r%3D%22.75%22%2F%3E%0A%20%20%20%20%20%20%20%20%3Cpath%20d%3D%22M51%2072h5v.7h-5zM74%2041l1%201-3%202-.5-1z%22%2F%3E%0A%20%20%20%20%20%20%3C%2Fg%3E%0A%20%20%20%20%3C%2Fmask%3E%0A%20%20%3C%2Fdefs%3E%0A%20%20%3Cg%20fill%3D%22white%22%20mask%3D%22url%28%23ink%29%22%3E%0A%20%20%20%20%3Cg%20fill%3D%22none%22%20stroke%3D%22white%22%3E%0A%20%20%20%20%20%20%3Ccircle%20cx%3D%2260%22%20cy%3D%2260%22%20r%3D%2257%22%20stroke-width%3D%221.1%22%20stroke-dasharray%3D%22141%201.5%2075%201%20139.6%22%2F%3E%0A%20%20%20%20%20%20%3Ccircle%20cx%3D%2260.4%22%20cy%3D%2259.7%22%20r%3D%2239.5%22%20stroke-width%3D%22.85%22%2F%3E%0A%20%20%20%20%20%20%3Cpath%20d%3D%22M31%2063h58M36%2081h48%22%20stroke-width%3D%22.8%22%2F%3E%0A%20%20%20%20%3C%2Fg%3E%0A%20%20%20%20%3Cg%20font-family%3D%22Arial%2CHelvetica%2Csans-serif%22%20font-weight%3D%22700%22%20text-anchor%3D%22middle%22%3E%0A%20%20%20%20%20%20%3Ctext%20font-size%3D%229.5%22%20letter-spacing%3D%221.1%22%3E%3CtextPath%20href%3D%22%23upper%22%20startOffset%3D%2250%25%22%3ELONDON%20POSTAGE%20SERVICE%3C%2FtextPath%3E%3C%2Ftext%3E%0A%20%20%20%20%20%20%3Ctext%20font-size%3D%229%22%20letter-spacing%3D%221.5%22%20dy%3D%227%22%3E%3CtextPath%20href%3D%22%23lower%22%20startOffset%3D%2250%25%22%3EUNITED%20KINGDOM%3C%2FtextPath%3E%3C%2Ftext%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%2260%22%20y%3D%2256%22%20font-size%3D%2218%22%20letter-spacing%3D%222%22%3EMAIL%3C%2Ftext%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%2260%22%20y%3D%2276%22%20font-size%3D%2210%22%20letter-spacing%3D%222.8%22%3ELONDON%3C%2Ftext%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%2260%22%20y%3D%2294%22%20font-size%3D%229%22%20letter-spacing%3D%222%22%3EUK%3C%2Ftext%3E%0A%20%20%20%20%3C%2Fg%3E%0A%20%20%20%20%3Ccircle%20cx%3D%2212%22%20cy%3D%2260%22%20r%3D%221.6%22%2F%3E%3Ccircle%20cx%3D%22108%22%20cy%3D%2260%22%20r%3D%221.6%22%2F%3E%0A%20%20%3C%2Fg%3E%0A%3C%2Fsvg%3E%0A") center / contain no-repeat;
 }
 
-/* ==========================================================================
-   [CJ-28] Fiches RP et onglets
-   ========================================================================== */
+/* ──────────────────────────────────────────────────────────
+   Finitions des fiches et des onglets
+   ────────────────────────────────────────────────────────── */
 
 .ab {
   text-align: justify !important;
@@ -31342,9 +31360,9 @@ img.lsh_de {
   margin-left: -30px;
 }
 
-/* ==========================================================================
-   [CJ-29] Réglages finaux du forum
-   ========================================================================== */
+/* ──────────────────────────────────────────────────────────
+   Palette actuelle et derniers réglages
+   ────────────────────────────────────────────────────────── */
 
 rioma {
   color: #F5B027;
@@ -33440,13 +33458,13 @@ html body a#header::after {
 
 
 
-     /* CORRECTIFS DIVERS
-   01 · Liste des sujets
-   02 · Messagerie privée
-   03 · Réponses imbriquées sous une présentation
-   04 · Chronologies */
+     /* ──────────────────────────────────────────────────────────
+   Les dernières retouches
+   ────────────────────────────────────────────────────────── */
 
-/* 01 · Liste des sujets */
+/* ──────────────────────────────────────────────────────────
+   Hauteur des lignes de sujets
+   ────────────────────────────────────────────────────────── */
 html body .main_forum .topicslist_row {
   min-height: 64px !important;
   padding-top: 8px !important;
@@ -33456,7 +33474,9 @@ html body .main_forum .topicslist_row {
 html body .main_forum .topicslist_row > .topicslist-img img {
   object-fit: cover !important;
 }
-/* 02 · Messagerie privée */
+/* ──────────────────────────────────────────────────────────
+   Présentation de la boîte de réception
+   ────────────────────────────────────────────────────────── */
 html body .main_forum .mp_row {
   grid-template-columns: 70px minmax(0, 1fr);
   column-gap: 14px;
@@ -33504,7 +33524,9 @@ html body .main_forum .mp_infos > input[type="checkbox"] {
   margin: 0;
 }
 
-/* CJ IMAGES DE LA CHATBOX */
+/* ──────────────────────────────────────────────────────────
+   Taille des images dans la chatbox
+   ────────────────────────────────────────────────────────── */
 
 html body #chatbox img:not(.user-avatar):not(.user-avatar img):not(.smiley):not(.emoji):not(.emojione):not([src*="/smiles/"]):not([src*="/smilies/"]):not([src*="/twemoji/"]) {
   max-width: min(100%, 320px) !important;
@@ -33515,8 +33537,7 @@ html body #chatbox img:not(.user-avatar):not(.user-avatar img):not(.smiley):not(
   vertical-align: middle;
 }
 
-/* Les dimensions explicites restent prioritaires ; seule l'image sans
-   dimension demandée conserve sa taille naturelle, sous le plafond ci-dessus. */
+/* Sans taille précisée, l’image garde ses proportions dans les limites ci-dessus. */
 html body #chatbox img:not([width]):not([style*="width" i]):not(.user-avatar):not(.user-avatar img):not(.smiley):not(.emoji):not(.emojione):not([src*="/smiles/"]):not([src*="/smilies/"]):not([src*="/twemoji/"]) {
   width: auto !important;
 }
@@ -33526,7 +33547,9 @@ html body #chatbox img:not([height]):not([style*="height" i]):not(.user-avatar):
 }
 
 
-     /* Empêche les styles de la fiche d’étirer les smileys */
+     /* ──────────────────────────────────────────────────────────
+   Smileys dans les fiches
+   ────────────────────────────────────────────────────────── */
 .prez img[src*="/smiles/"],
 .prez img[src*="/smilies/"] {
   width: auto !important;
@@ -33537,7 +33560,9 @@ html body #chatbox img:not([height]):not([style*="height" i]):not(.user-avatar):
   vertical-align: middle;
 }
 
-/* Crush Hour : smileys et emojis dans le fil du texte */
+/* ──────────────────────────────────────────────────────────
+   Smileys et emojis dans Crush Hour
+   ────────────────────────────────────────────────────────── */
 .tinder-auto-post .postbody img[src*="/twemoji/"],
 .tinder-auto-post .postbody img[src*="/smiles/"],
 .tinder-auto-post .postbody img[src*="/smilies/"] {
@@ -33548,7 +33573,9 @@ html body #chatbox img:not([height]):not([style*="height" i]):not(.user-avatar):
   float: none !important;
 }
 
-/* MP — respecter les dimensions définies dans les messages */
+/* ──────────────────────────────────────────────────────────
+   Images dans les messages privés
+   ────────────────────────────────────────────────────────── */
 body#phpbb .message > .message_content.postbody.content img {
   max-width: 100%;
   object-fit: contain;
@@ -33556,7 +33583,9 @@ body#phpbb .message > .message_content.postbody.content img {
 
 
 
-   /* BOUTONS DE LA MESSAGERIE PRIVÉ */
+   /* ──────────────────────────────────────────────────────────
+   Boutons de la messagerie privée
+   ────────────────────────────────────────────────────────── */
 
 html body .main_forum:has(#privmsgs-menu) {
   --mp-accent: var(--accentClr);
@@ -33769,7 +33798,9 @@ html body .main_forum form[name="privmsg_list"] :is(input, select, a):focus-visi
   }
 }
 
-/* CHRONOLOGIES */
+/* ──────────────────────────────────────────────────────────
+   Chronologies
+   ────────────────────────────────────────────────────────── */
 html body .chrono {
   display: grid !important;
   grid-template-columns: minmax(0, 90px) minmax(0, 1fr) !important;
@@ -33851,7 +33882,9 @@ html body .chrono > date:not(:last-of-type)::before {
 }
 
 
-   /* Story Instagram — en-tête et progression */
+   /* ──────────────────────────────────────────────────────────
+   En-tête des stories Instagram
+   ────────────────────────────────────────────────────────── */
 .story-box > .storyn,
 .story-box > #storyid {
   margin: 0;
