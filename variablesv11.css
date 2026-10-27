@@ -34055,3 +34055,37 @@ html body .chrono > date:not(:last-of-type)::before {
   }
 }
 
+
+   /* Icônes des groupes à côté des pseudos : messages et profils. */
+:is(.post_pseudo, .cj-profile__name) .usr_grp_clr.group-3 {
+  --cj-group-symbol: "\f06d"; /* Wild Fevers : flamme */
+}
+:is(.post_pseudo, .cj-profile__name) .usr_grp_clr.group-4 {
+  --cj-group-symbol: "\f0e7"; /* Domesticated Chaos : éclair */
+}
+:is(.post_pseudo, .cj-profile__name) .usr_grp_clr.group-5 {
+  --cj-group-symbol: "\f753"; /* Starved Dreams : météorite */
+}
+:is(.post_pseudo, .cj-profile__name) .usr_grp_clr.group-6 {
+  --cj-group-symbol: "\f0c1"; /* Caged Souls : chaîne */
+}
+
+:is(.post_pseudo, .cj-profile__name) .usr_grp_clr:is(.group-3, .group-4, .group-5, .group-6)::after {
+  content: var(--cj-group-symbol);
+  display: inline-block;
+  margin-inline-start: .4em;
+  vertical-align: .06em;
+  font-family: "Font Awesome 6 Free" !important;
+  font-weight: 900 !important;
+  font-style: normal !important;
+  font-size: .58em !important;
+  line-height: 1 !important;
+  font-variant: normal;
+  letter-spacing: 0;
+  text-transform: none;
+  color: inherit !important;
+  -webkit-text-fill-color: currentColor;
+  text-shadow: none;
+  -webkit-font-smoothing: antialiased;
+}
+
