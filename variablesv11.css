@@ -34056,18 +34056,18 @@ html body .chrono > date:not(:last-of-type)::before {
 }
 
 
-   /* Icônes des groupes à côté des pseudos : messages et profils. */
+/* Icônes des groupes à côté des pseudos : messages et profils. */
 :is(.post_pseudo, .cj-profile__name) .usr_grp_clr.group-3 {
-  --cj-group-symbol: "\f06d"; /* Wild Fevers : flamme */
+  --cj-group-symbol: "\e4dc"; /* Wild Fevers : explosion */
 }
 :is(.post_pseudo, .cj-profile__name) .usr_grp_clr.group-4 {
-  --cj-group-symbol: "\f0e7"; /* Domesticated Chaos : éclair */
+  --cj-group-symbol: "\e445"; /* Domesticated Chaos : voilier */
 }
 :is(.post_pseudo, .cj-profile__name) .usr_grp_clr.group-5 {
-  --cj-group-symbol: "\f753"; /* Starved Dreams : météorite */
+  --cj-group-symbol: "\f0e9"; /* Starved Dreams : parapluie */
 }
 :is(.post_pseudo, .cj-profile__name) .usr_grp_clr.group-6 {
-  --cj-group-symbol: "\f0c1"; /* Caged Souls : chaîne */
+  --cj-group-symbol: "\f7a9"; /* Caged Souls : cœur brisé */
 }
 
 :is(.post_pseudo, .cj-profile__name) .usr_grp_clr:is(.group-3, .group-4, .group-5, .group-6)::after {
@@ -34088,4 +34088,3 @@ html body .chrono > date:not(:last-of-type)::before {
   text-shadow: none;
   -webkit-font-smoothing: antialiased;
 }
-
