@@ -34088,3 +34088,58 @@ html body .chrono > date:not(:last-of-type)::before {
   text-shadow: none;
   -webkit-font-smoothing: antialiased;
 }
+
+/* Ajout ciblé : seule la barre latérale devient mobile. */
+html body#phpbb #cj-rail-navbar.sidebar,
+html body #cj-rail-navbar.sidebar {
+  display: flex !important; flex-wrap: nowrap !important;
+  width: max-content !important; height: max-content !important;
+  min-width: 0 !important; min-height: 0 !important;
+  max-width: none !important; max-height: none !important;
+  padding: 8px !important; gap: 7px !important;
+  align-items: center !important; justify-content: flex-start !important;
+  overflow: visible !important; border: 1px solid #77777730 !important;
+  border-radius: 12px !important; transition: none !important;
+}
+html body #cj-rail-navbar .sidebar_top,
+html body #cj-rail-navbar .sidebar_bottom,
+html body #cj-rail-navbar #switcheroo,
+html body #cj-rail-navbar #switcheroo > .switcheroo__squircles { display: contents !important; }
+/* The mobile grid must not keep the bar vertical, or anchor its panels
+   to an individual button instead of the entire bar. */
+html body#phpbb #cj-rail-navbar #switcheroo > .switcheroo__squircles > .switcheroo__squircle {
+  position: static !important;
+  transform: none !important;
+}
+html body #cj-rail-navbar .cj-rail-handle {
+  display: grid; place-items: center; flex: 0 0 36px;
+  width: 36px; height: 36px; padding: 7px; box-sizing: border-box;
+  color: var(--accentClr, #8582e8); background: transparent;
+  border: 0; border-radius: 8px; cursor: grab; touch-action: none;
+}
+html body #cj-rail-navbar .cj-rail-handle i { font-size: 20px; line-height: 1; pointer-events: none; }
+html body #cj-rail-navbar .cj-rail-handle:hover { background: #88888820; }
+html body #cj-rail-navbar .cj-rail-handle:focus-visible { outline: 2px solid currentColor; outline-offset: 2px; }
+html body #cj-rail-navbar[data-dragging] .cj-rail-handle { cursor: grabbing; }
+html body #cj-rail-navbar[data-dragging] { box-shadow: 0 0 0 2px var(--accentClr, #8582e8) !important; }
+html body #cj-rail-navbar #switcheroo .cj-switcheroo-dropdown {
+  transition: opacity .18s ease !important;
+  overflow: auto !important; min-width: 0 !important;
+}
+#cj-rail-guide { position: fixed; pointer-events: none; z-index: 99990;
+  border: 1px dashed #8582e880; border-radius: 16px; box-sizing: border-box; }
+.cj-rail-status { position: fixed; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); }
+
+html body #cj-rail-navbar #switcheroo > .switcheroo__squircles > .active > .switcheroo__popper { white-space: normal !important; overflow-wrap: anywhere; overflow: auto !important; }
+html body #cj-rail-navbar #switcheroo > .switcheroo__squircles > .active > .switcheroo__popper::before { display: none !important; }
+html body #cj-rail-navbar #switcheroo .cj-switcheroo-dropdown__list { max-height: none !important; }
+html body #FAM { transition: opacity .2s ease, visibility .2s ease !important; }
+@media(prefers-reduced-motion:reduce){html body #FAM,html body #cj-rail-navbar #switcheroo .cj-switcheroo-dropdown{transition:none!important}}
+html body #cj-rail-navbar #switcheroo .cj-switcheroo-dropdown__list > .switcheroo__squircle {
+  flex: 0 0 auto !important; height: auto !important; min-height: 54px !important; max-height: none !important;
+}
+html body #cj-rail-navbar #switcheroo .cj-switcheroo-dropdown .switcheroo__popper-text {
+  white-space: normal !important; overflow-wrap: anywhere; text-overflow: clip !important; overflow: visible !important;
+}
+
+
