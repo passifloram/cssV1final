@@ -34202,3 +34202,42 @@ html body #cj-rail-navbar #switcheroo .cj-switcheroo-dropdown .switcheroo__poppe
 }
 
 
+/* ──────────────────────────────────────────────────────────
+   lettre animée des titres de forum
+   ────────────────────────────────────────────────────────── */
+.cjcat .cjcat-name {
+  letter-spacing: 1.2px;
+}
+
+.cjcat .cjcat-name .cj-title-letter {
+  display: inline-block;
+  transform-origin: 50% 75%;
+  transform: translateY(0) rotate(0deg);
+
+  transition: transform 400ms cubic-bezier(.22, .8, .25, 1);
+  transition-delay: var(--letter-delay, 0ms);
+}
+
+/* Au survol du forum ou au focus clavier du titre */
+@media (hover: hover) {
+  .cjcat .cjcat-card:hover .cj-title-letter {
+    transform:
+      translateY(var(--letter-y, 0px))
+      rotate(var(--letter-angle, 0deg));
+  }
+}
+
+.cjcat .cjcat-name:focus-visible .cj-title-letter {
+  transform:
+    translateY(var(--letter-y, 0px))
+    rotate(var(--letter-angle, 0deg));
+}
+
+/* Respect des préférences de mouvement */
+@media (prefers-reduced-motion: reduce) {
+  .cjcat .cjcat-name .cj-title-letter {
+    transition: none;
+    transform: none !important;
+  }
+}
+
